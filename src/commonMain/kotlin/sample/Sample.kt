@@ -4,4 +4,8 @@ expect class Sample() {
     fun checkMe(): Int
 }
 
-fun hello(): String = "Hello from ${Platform.name}"
+expect object Platform {
+    val name: String
+}
+
+fun hello(): String = "${Helper.helloInit} ${Platform.name}"

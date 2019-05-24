@@ -1,5 +1,5 @@
 package sample
 
-expect object Platform {
-    val name: String
+object Helper{
+    val helloInit = "Hello from"
 }
